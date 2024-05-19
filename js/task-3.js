@@ -7,10 +7,11 @@ const profile = {
   },
 
   changeUsername(newName) {
-    this.username = "Marco";
+    this.username = newName;
   },
+
   updatePlayTime(hours) {
-    this.playTime += 20;
+    this.playTime += hours;
   },
 };
 console.log(profile.getInfo()); // "Jacob has 300 active hours!"
